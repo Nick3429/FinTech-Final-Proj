@@ -14,3 +14,7 @@ app = Flask(__name__)
 @app.route('/index')
 def index():
     return render_template("index.html", time = datetime.now())
+
+@app.route('/currencyexchange')
+def currencyexchange():
+    return render_template("currencyexchange.html", time = datetime.now())

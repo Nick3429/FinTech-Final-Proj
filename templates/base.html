@@ -6,12 +6,11 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<title>TravelEase</title>
-    <link rel="stylesheet" type="text/css" href="static/css/style.css?q={{ time }}" />
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
 	 crossorigin="anonymous">
 	<!-- End of Bootstrap -->
-	<link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="static/css/style.css?q={{ time }}" />
 </head>
 
 
@@ -37,37 +36,25 @@
 	<!-- <h2>
   </h2> -->
 	
-		<nav class="navbar navbar-expand-lg navbar-gray gray">
-			<!-- image -->
-			<a class="navbar-brand white" href="#"><img class = "navimg" src = "logo.jpg" style="width:100px;height:100px></a>
-    <!-- end image -->
-		<a class="navbar-brand white " href="index.html">Home</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+    <nav class="navbar navbar-expand-lg navbar-gray gray row">
+        <div class= "nav-spacing col-lg-4"> 
+			<a class="navbar-brand white" href=""><img class = "navimg" src = "static/images/logo.jpg" style="width:100px;height:100px"></a>
+        </div>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active white">
-        <a class="nav-link white" href="currencyexchange.html">Currency Exhange <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item white">
-        <a class="nav-link white" href="#">Flights</a>
-      </li>
-      <li class="nav-item dropdown white"
-
+        <div class= "nav-spacing col-lg-5">
+            <a class="nav-link white " href="/index">Home</a>
+            <a class="nav-link white" href="/currencyexchange">Currency Exhange <span class="sr-only">(current)</span></a>
+            <a class="nav-link white" href="#">Flights</a>
+        </div>
     
-
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2 white" type="search" placeholder="Search" aria-label="Search">
-
-       <button type="button" id="search" class="btn btn-dark">Search</button>
-       <!-- <input type="button" class="btn btn-info" value="search"> -->
-
-      <!-- <button id = "search" class="btn btn-outline-success my-2 my-sm-0 white" type="submit">Search</button> -->
-    </form>
+        <div class="nav-spacing col-lg-3">
+            <form class="form-inline my-3 my-lg-0">
+                <input class="form-control mr-sm-2 white" type="search" placeholder="Search" aria-label="Search">
+                <button type="button" id="search" class="btn btn-dark">Search</button>
+            </form>
+        </div>
   </div>
+  
     
     </nav>
 
@@ -86,7 +73,7 @@
       <div class = "col-md-4 col-sm-6">
         <div class = "card text-center">
           <div class = "card-block">
-            <img src = "money.jpg" alt = "" class = "img-fluid"> 
+            <img src = "static/images/money.jpg" alt = "" class = "img-fluid"> 
             <div class = "card-title">
               <h4>Exchange Rates</h4>
             </div>
@@ -101,7 +88,7 @@
       <div class = "col-md-4 col-sm-6">
         <div class = "card text-center">
           <div class = "card-block">
-            <img src = "plane.jpg" alt = "" class = "img-fluid"> 
+            <img src = "static/images/plane.jpg" alt = "" class = "img-fluid"> 
             <div class = "card-title">
               <h4>Flight Finder</h4>
             </div>
@@ -116,7 +103,7 @@
       <div class = "col-md-4 col-sm-6">
         <div class = "card text-center">
           <div class = "card-block">
-            <img src = "baloon.jpg" alt = "" class = "img-fluid"> 
+            <img src = "static/images/baloon.jpg" alt = "" class = "img-fluid"> 
             <div class = "card-title">
               <h4>Restaurant API</h4>
             </div>
