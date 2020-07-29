@@ -18,3 +18,7 @@ def index():
 @app.route('/currencyexchange')
 def currencyexchange():
     return render_template("currencyexchange.html", time = datetime.now())
+
+@app.route('/flights')
+def flights():
+    return render_template("flights.html", time = datetime.now())
