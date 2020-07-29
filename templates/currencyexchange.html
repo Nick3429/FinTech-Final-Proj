@@ -5,12 +5,74 @@
 {% block content %}
 <a class="navbar-brand white " href="/index">Home</a>
 <!-- currencyexchange tool-->
-<script type="text/javascript"   src="https://www.exchange-rates.org/GetCustomContent.aspx?sid=CC000QB6I&amp;type=CurrencyConverter&amp;stk=-0DDTHW73PV" charset="utf-8">
+<!-- <script type="text/javascript"   src="https://www.exchange-rates.org/GetCustomContent.aspx?sid=CC000QB6I&amp;type=CurrencyConverter&amp;stk=-0DDTHW73PV" charset="utf-8">
 </script>
 <div>Source: <a href="https://www.exchange-rates.org/" rel="nofollow">www.exchange-rates.org</a>
 
 </div><noscript>
-    <iframe ID="frmExchRatesCC000QB6I" style="margin:0px;border:none;padding:0px;" frameborder="0" width="161" height="181" src="https://www.exchange-rates.org/GetCustomContent.aspx?sid=CC000QB6I&amp;type=CurrencyConverter&amp;submit=submit&amp;stk=04N9DMC3PW"></iframe></noscript>
-{% endblock %}
-<!--api thing-->
+    <iframe ID="frmExchRatesCC000QB6I" style="margin:0px;border:none;padding:0px;" frameborder="0" width="161" height="181" src="https://www.exchange-rates.org/GetCustomContent.aspx?sid=CC000QB6I&amp;type=CurrencyConverter&amp;submit=submit&amp;stk=04N9DMC3PW"></iframe></noscript> -->
 
+
+<!-- begin api form -->
+
+<div class="alert alert-warning" role="alert">
+
+<form method="post" action="/results">
+    <label for="cars">Choose a base Currency:</label>
+    <select id="cars" name="base">
+        <option value="USD">US Dollar</option>
+        <option value="CAD">Canadian Dollar</option>
+        <option value="HKD">Honk Kong Dollar</option>
+        <option value="ISK">Icelandic Dollar</option>
+        <option value="PHP">Phillipine Peso</option>
+        <option value="DKK">Danish Krone</option>
+        <option value="HUF">Hungarian Dollar</option>
+        <option value="CZK">Czech Dollar</option>
+        <option value="GBP">Great British Pound</option>
+        <option value="RON">Romanian Leu</option>
+        <option value="SEK">Swedish Krona</option>
+        <option value="IDR">Indonesian Roopah</option>
+        <option value="CNY">Chinese Yen</option>
+        <option value="EUR">Euro</option>
+        <option value="MYR">Maylasian Ringit</option>
+        <option value="NOK">Norweigian Krone</option>
+        <option value="AUD">Austrailan Dollar</option>
+        <option value="PLN">Poland Zloty</option>
+        <option value="KRW">South Korean Won</option>
+    </select>
+    <!-- Next form -->
+    <label for="cars">Choose a new Conversion Currency:</label>
+    <select id="cars" name="new">
+        <option value="USD">US Dollar</option>
+        <option value="CAD">Canadian Dollar</option>
+        <option value="HKD">Honk Kong Dollar</option>
+        <option value="ISK">Icelandic Dollar</option>
+        <option value="PHP">Phillipine Peso</option>
+        <option value="DKK">Danish Krone</option>
+        <option value="HUF">Hungarian Dollar</option>
+        <option value="CZK">Czech Dollar</option>
+        <option value="GBP">Great British Pound</option>
+        <option value="RON">Romanian Leu</option>
+        <option value="SEK">Swedish Krona</option>
+        <option value="IDR">Indonesian Roopah</option>
+        <option value="CNY">Chinese Yen</option>
+        <option value="EUR">Euro</option>
+        <option value="MYR">Maylasian Ringit</option>
+        <option value="NOK">Norweigian Krone</option>
+        <option value="AUD">Austrailan Dollar</option>
+        <option value="PLN">Poland Zloty</option>
+        <option value="KRW">South Korean Won</option>
+    </select>
+    <!-- next form -->
+    <label for="cars">Enter Conversion Amount:</label>
+    <input type="text" name="money" placeholder="ENTER THE AMOUNT OF $"/>
+    <input type="submit" value="Submit"/>
+    <!-- next form -->
+    <!-- <input type="text" name="base" placeholder="ENTER A BASE CURRENCY SYMBOL"/>
+    <input type="text" name="new" placeholder="ENTER THE NEW SYMBOL TO CONVERT TOO"/>
+    <input type="text" name="money" placeholder="ENTER THE AMOUNT OF MONEY"/>
+    <input type="submit" value="Submit"/> -->
+</form>
+</div>
+<!-- end api form -->
+{% endblock %}
